@@ -1,0 +1,40 @@
+$emBase: 16;
+$maxWidth: 1200; //px
+$pcBreakPoint: 1024; //px
+$spBrealPoint: 768; //px
+
+$mq-all : null !default;
+$mq-max : null !default;
+$mq-pc  : null !default;
+$mq-tb  : null !default;
+$mq-sp  : null !default;
+
+// example SP + PC
+$default-mq-pc-min-width: (($spBrealPoint / $emBase) * 1em) !default; // 767~
+$default-mq-sp-max-width: ((($spBrealPoint - 1) / $emBase) * 1em) !default; // ~767
+
+// @media screen and (min-width: $default-mq-pc-min-width) {} // 768~
+// @media screen and (max-width: $default-mq-sp-max-width) {} // ~767
+
+// example SP + TB + PC + Mac
+// $default-mq-pc-max-width: ((($maxWidth + 1) / $emBase) * 1em) !default; // 1201~
+// $default-mq-pc-min-width: (($maxWidth / $emBase) * 1em) !default; // ~1200
+// $default-mq-tb-max-width: (($pcBreakPoint / $emBase) * 1em) !default; // ~1024
+// $default-mq-sp-max-width: ((($spBrealPoint - 1) / $emBase) * 1em) !default; // ~767
+
+// @media screen and (min-width: $default-mq-pc-max-width) {} // 1201~
+// @media screen and (max-width: $default-mq-pc-min-width) {} // ~1200
+// @media screen and (max-width: $default-mq-tb-max-width) {} // ~1024
+// @media screen and (max-width: $default-mq-sp-max-width) {} // ~767
+
+// module copy snippet
+//
+// @if $mq-all {}
+//
+// @if $mq-max {}
+//
+// @if $mq-pc {}
+//
+// @if $mq-tb {}
+//
+// @if $mq-sp {}

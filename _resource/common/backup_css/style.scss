@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+/* ---------------------------
+ * ALL Width
+ * --------------------------- */
+$mq-all : true;
+$mq-max : false;
+$mq-pc  : false;
+$mq-tb  : false;
+$mq-sp  : false;
+@import "vendor/normalize/normalize";
+@import "setting/variable";
+@import "setting/mq";
+@import "base";
+@import "module";
+
+@media print, screen and (min-width: $default-mq-pc-min-width) {
+/* ---------------------------
+ * PC
+ * --------------------------- */
+$mq-all : false;
+$mq-pc  : true;
+$mq-sp  : false;
+@import "base";
+@import "module";
+}
+
+@media screen and (max-width: $default-mq-sp-max-width) {
+/* ---------------------------
+ * SmartPhone
+ * --------------------------- */
+$mq-all : false;
+$mq-pc  : false;
+$mq-sp  : true;
+@import "base";
+@import "module";
+}
+
+// example SP + TB + PC + Mac
+//
+// @media screen and (min-width: $default-mq-pc-max-width) {
+// /* ---------------------------
+//  * MaxWidth
+//  * --------------------------- */
+// $mq-all : false;
+// $mq-max : true;
+// $mq-pc  : false;
+// $mq-tb  : false;
+// $mq-sp  : false;
+// @import "base";
+// @import "module";
+// }
+
+// @media print, screen and (max-width: $default-mq-pc-min-width) {
+// /* ---------------------------
+//  * PC
+//  * --------------------------- */
+// $mq-all : false;
+// $mq-max : false;
+// $mq-pc  : true;
+// $mq-tb  : false;
+// $mq-sp  : false;
+// @import "base";
+// @import "module";
+// }
+
+// @media screen and (max-width: $default-mq-tb-max-width) {
+// /* ---------------------------
+//  * Tablet
+//  * --------------------------- */
+// $mq-all : false;
+// $mq-max : false;
+// $mq-pc  : false;
+// $mq-tb  : true;
+// $mq-sp  : false;
+// @import "base";
+// @import "module";
+// }
+
+// @media screen and (max-width: $default-mq-sp-max-width) {
+// /* ---------------------------
+//  * SmartPhone
+//  * --------------------------- */
+// $mq-all : false;
+// $mq-max : false;
+// $mq-pc  : false;
+// $mq-tb  : false;
+// $mq-sp  : true;
+// @import "base";
+// @import "module";
+// }

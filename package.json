@@ -1,0 +1,40 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "gulp server",
+    "server": "gulp server",
+    "gulp": "gulp",
+    "build": "gulp build"
+  },
+  "dependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cache": "^0.4.6",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-csso": "^3.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-jscs": "^4.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-size": "^2.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^2.2.1",
+    "metalsmith": "^2.3.0",
+    "metalsmith-ignore": "^0.1.2",
+    "metalsmith-in-place": "1.4.4",
+    "metalsmith-layouts": "^1.8.1",
+    "nunjucks": "^3.0.1",
+    "run-sequence": "^2.2.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "opn": "^5.1.0"
+  }
+}
