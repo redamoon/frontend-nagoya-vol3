@@ -1,27 +1,8 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<title>{{ title }}</title>
-<meta name="description" content="{{ description }}">
-<meta name="keywords" content="{{ keywords }}">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="{{ webroot }}/common/css/uikit.css" />
-<link rel="stylesheet" href="{{ webroot }}/common/css/style.css">
-</head>
-<body class="{{ page }}">
-
+{% include '_partial/html_head.html' %}
 {% include '_partial/header.html' %}
-
-<div class="uk-cover-container uk-height-large">
-  <img src="/common/img/main.jpg" class="uk-width-1-1 uk-position-bottom-center" alt="">
-</div>
-
+{% include '_partial/mainvisual.html' %}
 <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
 {{ contents | safe }}
 </div><!-- /.layout-wrapper -->
 {% include '_partial/footer.html' %}
-{% include '_partial/script.html' %}
-
-</body>
-</html>
+{% include '_partial/html_foot.html' %}

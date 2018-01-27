@@ -1,0 +1,30 @@
+{#
+========================================
+Template Name : config
+Template Type : Module / WebSite
+Template Note : 各種設定
+========================================
+#}
+
+{#
+  各種リンク・ラベル周りのデータ
+ #}
+{% set site_label_data_information = {
+    name : 'お知らせのボタン',
+    link : '/information/'
+} %}
+{% set site_label_data_company = {
+    name : '会社概要のボタン',
+    link : '/company/'
+} %}
+
+{#
+  記事のサンプルデータ
+ #}
+{%
+  set entries = [
+    ['Frontend Nagoya #3の募集が開始されました。', '/information/entryid01/', '2018/01/27'],
+    ['新年のご挨拶', '/information/entryid02/', '2018/01/01'],
+    ['年末年始営業について', '/information/entryid03/', '2017/12/20']
+  ]
+%}

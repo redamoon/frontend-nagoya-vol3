@@ -45,6 +45,8 @@ elements:
             label: 'navigation'
           template_header:
             label: 'header'
+          template_mainvisual:
+            label: 'mainvisual'
         system:
           dynamic_error:
             description_label: 'Displays errors for dynamically-published templates.'

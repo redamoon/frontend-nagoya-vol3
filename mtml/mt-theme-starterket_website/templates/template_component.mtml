@@ -24,3 +24,45 @@ Template Note : Component Template
 ※SetVarTemplate内のVarの名前にハイフンを入れると処理が抜ける
 </mt:ignore>
 
+<mt:ignore>見出しのコンポーネント</mt:ignore>
+<mt:SetVarTemplate name="_HeadingTemplate" key="HeadingTemplate" note="見出しのコンポーネント">
+  <h1 class="uk-heading-line"><span><mt:Var name="text" /></span></h1>
+</mt:SetVarTemplate>
+
+<mt:ignore>ボタンのコンポーネント</mt:ignore>
+<mt:SetVarTemplate name="_BtnTemplate" key="BtnTemplate" note="ボタンのコンポーネント">
+  <a class="uk-button <mt:Var name='class' />" href="<mt:Var name='link' />"><mt:Var name="text" /></a>
+</mt:SetVarTemplate>
+
+<mt:ignore>テキストのコンポーネント</mt:ignore>
+<mt:SetVarTemplate name="_TextTemplate" key="TextTemplate" note="テキストのコンポーネント">
+  <div class="<mt:Var name='wrap_class' />">
+    <p class="<mt:Var name='text_class' />"><mt:Var name="text" /></p>
+  </div>
+</mt:SetVarTemplate>
+
+<mt:ignore>カードのコンポーネント</mt:ignore>
+<mt:SetVarTemplate name="_CardBlockTemplate" key="CardBlockTemplate" note="カードのコンポーネント">
+      <div class="<mt:Var name='column_class' /> uk-card">
+        <div class="uk-padding">
+          <i uk-icon="<mt:Var name='icon' />"></i>
+        </div>
+        <div class="uk-card">
+          <h2 class="uk-h3"><mt:Var name="title" /></h2>
+          <p class="<mt:Var name='text_class' />"><mt:Var name="text" /></p>
+          <a class="uk-button <mt:Var name='btn_class' />" href="<mt:Var name='link' />"><mt:Var name="btn_name" /></a>
+        </div>
+      </div>
+</mt:SetVarTemplate>
+
+<mt:ignore>記事のコンポーネント</mt:ignore>
+<mt:SetVarTemplate name="_EntriesTemplate" key="EntriesTemplate" note="記事のコンポーネント">
+<mt:loop name="entries">
+<mt:If name="__first__"><ul class="uk-list uk-link-text"></mt:If>
+  <li uk-grid>
+    <span class="uk-width-auto"><mt:Var name="date" />：</span>
+    <a class="uk-width-expand uk-padding-remove" href="<mt:Var name='link' />"><mt:Var name="title" /></a>
+  </li>
+<mt:If name="__last__"></ul></mt:If>
+</mt:loop>
+</mt:SetVarTemplate>

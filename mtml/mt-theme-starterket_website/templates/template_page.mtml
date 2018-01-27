@@ -16,9 +16,6 @@ Template Note : ウェブページ出力用
 <mt:Unless name="compress" regex_replace="/^\s*\n/gm","">
 <mt:Include module="html_head" parent="1" />
 <mt:Include module="header" parent="1" />
-<mt:Include module="navigation" parent="1" />
-
-<!-- ここからコンテンツ -->
 
     <mt:PageBody mteval="1" />
 

@@ -1,0 +1,50 @@
+{#
+========================================
+Template Name : component
+Template Type : Module / WebSite
+Template Note : Component Template
+========================================
+#}
+
+{# 見出しのコンポーネント #}
+{% macro HeadingTemplate(text) %}
+  <h1 class="uk-heading-line"><span>{{ text }}</span></h1>
+{% endmacro %}
+
+{# ボタンのコンポーネント #}
+{% macro BtnTemplate(class,text,link) %}
+  <a class="uk-button {{ class }}" href="{{ link }}">{{ text }}</a>
+{% endmacro %}
+
+{# テキストのコンポーネント #}
+{% macro TextTemplate(wrap_class,text_class,text) %}
+  <div class="{{ wrap_class }}">
+    <p class="{{ text_class }}">{{ text }}</p>
+  </div>
+{% endmacro %}
+
+{# カードのコンポーネント #}
+{% macro CardBlockTemplate(column_class, icon, title, text_class, text, btn_class, link, btn_name) %}
+      <div class="{{ column_class }} uk-card">
+        <div class="uk-padding">
+          <i uk-icon="{{ icon }}"></i>
+        </div>
+        <div class="uk-card">
+          <h2 class="uk-h3">{{ title }}</h2>
+          <p class="{{ text_class }}">{{ text }}</p>
+          <a class="uk-button {{ btn_class }}" href="{{ link }}">{{ btn_name }}</a>
+        </div>
+      </div>
+{% endmacro %}
+
+{# 記事のコンポーネント #}
+{% macro EntriesTemplate(date,link,title,entries) %}
+  {% for title,link,date in entries %}
+  {% if loop.first %}<ul class="uk-list uk-link-text">{% endif %}
+  <li uk-grid>
+    <span class="uk-width-auto">{{ date }}：</span>
+    <a class="uk-width-expand uk-padding-remove" href="{{ link }}">{{ title }}</a>
+  </li>
+  {% if loop.last %}</ul>{% endif %}
+  {% endfor %}
+{% endmacro %}

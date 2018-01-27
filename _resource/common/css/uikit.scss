@@ -3839,7 +3839,7 @@ ul.uk-nav-sub {
   height: 80px;
   padding: 0 15px;
   /* 3 */
-  font-size: 0.875rem;
+  // font-size: 0.875rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   /* 4 */
   text-decoration: none;
@@ -6890,6 +6890,9 @@ ul.uk-nav-sub {
 }
 .uk-text-danger {
   color: #f0506e !important;
+}
+.uk-text-white {
+  color: #FFF !important;
 }
 /* Background modifier
  ========================================================================== */
