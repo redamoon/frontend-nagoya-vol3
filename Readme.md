@@ -12,7 +12,7 @@
 |---|---|
 | _resource | 開発用コード：基本ここに書く |
 | _resource/common/css | scss格納ディレクトリ |
-| mtml | MTのテーマ格納（サーバは別途：）MT本体はVirtualBoxなど仮想ツールで管理 |
+| mtml | MTのテーマ格納（サーバは別途：MT本体はVirtualBoxなど仮想ツールで管理） |
 | html | 出力コード |
 
 ## コーディングガイドライン
