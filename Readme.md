@@ -12,9 +12,8 @@
 |---|---|
 | _resource | 開発用コード：基本ここに書く |
 | _resource/common/css | scss格納ディレクトリ |
-| themes | HTMLの共通部分パーツ：MTの共通部用などに利用 |
-| gulp | gulp用の設定ファイル |
-| html | 出力コード：触るな危険 |
+| mtml | MTのテーマ格納（サーバは別途：）MT本体はVirtualBoxなど仮想ツールで管理 |
+| html | 出力コード |
 
 ## コーディングガイドライン
 
@@ -40,3 +39,15 @@ $ yarn start
 ```
 $ yarn run build
 ```
+
+## Nunjucks Config and Component
+
+* _resource/_layouts/_partial/config.html
+* _resource/_layouts/_partial/component.html
+
+## Movable Type Config and Component
+
+* mtml/mt-theme-starterket_website/templates/template_config.mtml
+* mtml/mt-theme-starterket_website/templates/template_component.mtml
+
+
